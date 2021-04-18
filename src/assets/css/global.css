@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  src: local("Agustina Regular"), url("../fonts/Agustina.ttf") format("tff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Agustina Signature";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Signature"), url("../fonts/Agustina.woff") format("woff");
+}
