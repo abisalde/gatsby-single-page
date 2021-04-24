@@ -8,27 +8,42 @@ const Header = ({ siteTitle }) => (
         style={{
             position: `absolute`,
             zIndex: `9`,
+            marginTop: `1.325rem`,
             marginBottom: `1.45rem`,
+            width: `100%`,
         }}
     >
         <div
             style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `1.45rem 1.0875rem`,
+                display: `flex`,
+                justifyContent: `space-between`,
+                alignItems: `center`,
             }}
+            className="wrapper"
         >
-            <h1 style={{ margin: 0, fontFamily: `Agustina Signature` }}>
+            <h1
+                style={{
+                    margin: 0,
+                    fontFamily: `Agustina Signature`,
+                    width: `100%`,
+                }}
+            >
                 <Link
                     to="/"
                     style={{
                         color: `white`,
                         textDecoration: `none`,
+                        textShadow: `-5px 7px 17px rgba(106, 193, 191, 1)`,
                     }}
                 >
                     {siteTitle}
                 </Link>
             </h1>
+            <div className="hamburger">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
             <Navbar />
         </div>
     </header>

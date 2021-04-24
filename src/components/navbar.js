@@ -3,38 +3,45 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav
+            style={{
+                display: `flex`,
+                flexFlow: `row nowrap`,
+                justifyContent: `flex-end`,
+                width: `100%`,
+            }}
+        >
             <AnchorLink
-                to="#about"
+                to="/#about"
                 title="about"
                 className="nav_links"
                 stripHash
             >
-                <span>About</span>
+                About
             </AnchorLink>
             <AnchorLink
-                to="#experience"
+                to="/#experience"
                 title="experience"
                 className="nav_links"
                 stripHash
             >
-                <span>Experience</span>
+                Experience
             </AnchorLink>
             <AnchorLink
-                to="#gallery"
+                to="/#gallery"
                 title="gallery"
                 className="nav_links"
                 stripHash
             >
-                <span>Gallery</span>
+                Gallery
             </AnchorLink>
             <AnchorLink
-                to="#contact"
+                to="/#contact"
                 title="contact"
                 className="nav_links"
                 stripHash
             >
-                <span>Contact</span>
+                Contact
             </AnchorLink>
         </nav>
     )

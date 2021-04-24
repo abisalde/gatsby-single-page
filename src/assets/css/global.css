@@ -1,13 +1,110 @@
 @font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  src: local("Agustina Regular"), url("../fonts/Agustina.ttf") format("tff");
-  font-display: swap;
+    font-family: "Agustina Regular";
+    font-style: normal;
+    src: local("Agustina Regular"), url("../fonts/Agustina.ttf") format("tff");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Agustina Signature";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Signature"), url("../fonts/Agustina.woff") format("woff");
+    font-family: "Agustina Signature";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Agustina Signature"),
+        url("../fonts/Agustina.woff") format("woff");
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 1.5625rem;
+    height: 0.125rem;
+    margin: 0.3125rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.bar:nth-child(2) {
+    width: 0.875rem;
+}
+
+@media (max-width: 576px) {
+    nav {
+        position: fixed;
+        left: -160%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 0.625rem;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 0.625rem 1.6875rem rgba(0, 0, 0, 0.05);
+    }
+    nav.active {
+        left: 0;
+        margin: auto;
+    }
+    .hamburger {
+        display: block;
+        outline: none;
+        cursor: pointer;
+        right: -1.125rem;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(0.425rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-0.425rem) rotate(-45deg);
+    }
+}
+
+.nav_links {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100vw;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+    .nav_links {
+        padding-right: 1.625rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        max-width: 950px;
+    }
+    .nav_links {
+        padding-right: 3.512rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1120px;
+    }
 }

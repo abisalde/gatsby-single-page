@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Omoyemi E`,
+        title: `Omoyemi`,
         description: `Public Profile of Owa Ewere Omoyemi`,
         author: `@abisalde`,
     },
