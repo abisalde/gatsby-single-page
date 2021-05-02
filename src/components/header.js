@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import Navbar from "./navbar"
+import Navbar from "./navbar/navbar"
 
 const Header = ({ siteTitle }) => (
     <header
@@ -39,11 +39,6 @@ const Header = ({ siteTitle }) => (
                     {siteTitle}
                 </Link>
             </h1>
-            <div className="hamburger">
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </div>
             <Navbar />
         </div>
     </header>
