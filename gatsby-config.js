@@ -1,6 +1,24 @@
 module.exports = {
     siteMetadata: {
         title: `Omoyemi`,
+        menuLinks: [
+            {
+                name: "About",
+                link: "/#about",
+            },
+            {
+                name: "Experience",
+                link: "/#experience",
+            },
+            {
+                name: "Gallery",
+                link: "/#gallery",
+            },
+            {
+                name: "Contact",
+                link: "/#contact",
+            },
+        ],
         description: `Public Profile of Owa Ewere Omoyemi`,
         author: `@abisalde`,
     },
