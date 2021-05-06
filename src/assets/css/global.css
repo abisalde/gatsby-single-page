@@ -50,3 +50,19 @@
         max-width: 1120px;
     }
 }
+
+.hero-intro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.hero-text {
+    width: 41.333%;
+}
+
+.hero-image {
+    position: relative;
+    bottom: -127px;
+    width: 41.333%;
+}
