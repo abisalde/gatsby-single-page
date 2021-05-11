@@ -43,7 +43,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                         {siteTitle}
                     </Link>
                 </h1>
-                <nav>
+                <nav onClick={handleClick}>
                     <div
                         className={
                             openNavbar ? "hamburger active" : "hamburger"

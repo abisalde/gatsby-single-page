@@ -20,7 +20,7 @@ const Hero = () => {
                     aspectRatio={3 / 1}
                     layout="fullWidth"
                     alt="Hero_Omoyemi.com"
-                    zIndex={1}
+                    zindex={1}
                 />
                 <div
                     style={{
@@ -36,10 +36,10 @@ const Hero = () => {
                             <h2>Omoyemi....</h2>
                             <p>
                                 Sociologist <span>+</span> Finance
-                                <p>
-                                    Welcome to my webpage portfolio, scrolldown
-                                    for a mini tour of who I am and what I do;
-                                </p>
+                            </p>
+                            <p>
+                                Welcome to my webpage portfolio, scrolldown for
+                                a mini tour of who I am and what I do;
                             </p>
                         </div>
                         <div className="hero-image">
@@ -48,6 +48,7 @@ const Hero = () => {
                                 src="https://i.imgur.com"
                                 formats={["AUTO", "WEBP", "AVIF"]}
                                 quality={95}
+                                alt="omoyemi"
                             />
                         </div>
                     </div>
